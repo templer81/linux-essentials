@@ -28,7 +28,7 @@ $ uname
 # paste output here
 $ uname -a
 # paste output here
-$ cal
+$ date
 # paste output here
 ```
 
