@@ -135,6 +135,7 @@ drwxr-xr-x  2 root root    4096 Jun 16 00:02 alternatives
 * Arguments
   * option: `-l` (list details)
   * other: `/etc` (/etc directory, in this example)
+  * Space between arguments
 
 **Questions**
 
@@ -270,6 +271,8 @@ $ cp syllabus.txt ../template.txt # copy syllabus.txt as ../template.txt
 $ cp -r math chinese # copy dir math as chinese
 ```
 
+* `cp` will overwrite if destination has the same file name
+
 ### Remove directories and files 
 
 ``` shell
@@ -278,6 +281,8 @@ $ rm -r math # remove math directory, put -r option to remove dir recursively
 # WARNING: The following line will cause disaster if not use properly
 $ rm -rf *
 ```
+
+* `rm ` will delete file permanently
 
 ### Matching files
 
@@ -339,7 +344,9 @@ $ sudo shutdown now
 
 ## Github Usage
 
+**Add SSH public key to github**
 
+> [Generating an SSH key](https://help.github.com/articles/generating-an-ssh-key/#platform-mac)
 
 ## Reference
 

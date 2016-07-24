@@ -1,0 +1,6 @@
+# This is a example of CSV file
+id,name,math,chinese,english,science
+1,Alice,99,100,,50
+2,Bob,80,,90,61
+3,Edward,99,88,75,100
+4,David,87,92,88,84
