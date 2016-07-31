@@ -122,6 +122,8 @@ $ grep -in3 Robin ./midsummer_nights_dreams.html
 
 ### Write file
 
+Redirect output to a file
+
 ``` shell
 $ echo "hello world" > hello.txt
 $ ls > list.txt
@@ -142,8 +144,8 @@ $ cat midsummer_nights_dreams.html
 Interactive scrolling file
 
 ``` shell
-$ more midsummer_nights_dreams.html # old utility
-$ less midsummer_nights_dreams.html # less is more, and better
+$ more midsummer_nights_dreams.html # old utility # exit: q
+$ less midsummer_nights_dreams.html # less is more, and better # exit: q
 ```
 
 **head/tail**
@@ -154,7 +156,7 @@ $ head -n15 midsummer_nights_dreams.html
 
 $ tail midsummer_nights_dreams.html
 $ tail -n15 midsummer_nights_dreams.html
-$ tail -f test.txt
+$ tail -f test.txt # monitor tail of a file # exit: ctrl+c
 ```
 
 ### Other file operations
@@ -162,10 +164,10 @@ $ tail -f test.txt
 **Word count: `wc`**
 
 ``` shell
-$ wc midsummer_nights_dreams.html
+$ wc midsummer_nights_dreams.html # word count
 ```
 
-**Symbolic Link `ln`**
+**Symbolic link `ln`**
 
 ``` shell
 # hard link
@@ -176,6 +178,12 @@ $ ln -s /path/to/file /path/to/symlink
 
 > [ln 命令](http://www.cnblogs.com/peida/archive/2012/12/11/2812294.html)
 
+**Inspect difference `diff`**
+
+``` shell
+$ diff file1 file2
+```
+
 ## Pipeline And Redirection
 
 **Pipeline**
@@ -184,8 +192,7 @@ Pipeline is useful to chain the input and output between different command line
 
 ``` shell
 $ ls -t1 | head -n2
-$ ls -t1 application.log.* | head -n2 | tail -f
-$ find . -name "*.java" | grep class
+$ ls -t1 application.log.* | head -n1 | tail -f
 ```
 
 * output of previous command will become the input of the following command
@@ -267,7 +274,14 @@ $ chmod 777 file.txt
 $ chmod u+x file.txt
 ```
 
-
 ## Reference
 
 ## Q&A
+
+**Manual page**
+
+``` shell
+$ man find # manual page for find command
+# press q to quit
+```
+
