@@ -12,7 +12,7 @@
   * Memory
 * HDD
   * Hard Drive Disk
-  * SSD
+  * SSD (Solid State Drive)
 
 **Software**
 
@@ -22,8 +22,10 @@
 
 **Network**
 
-* IP address
+* IP address 
   * 170.0.0.1 (loop back address)
+
+
 * local / localhost
 * server / remote
 
@@ -59,6 +61,12 @@ $ sudo apt-get install tree vim
 ## Git
 
 > Reference: [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
+### Concepts
+
+* Repository
+* Commit
+  * Revision
 
 ### Basics
 
