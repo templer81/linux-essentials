@@ -41,6 +41,7 @@ Press key `i` to enter insert mode, press key `v` to enter visual mode. Press ke
 :w   # write == save
 :q   # quit
 :wq  # write and quit
+:w filename # save as filename
 ```
 
 ### Insert
@@ -90,6 +91,7 @@ U  # fix the whole line
 
 ``` shell
 yy  # copy current line
+5yy # copy 5 lines
 p   # paste (put) line, can also be used after delete
 ```
 
@@ -104,6 +106,8 @@ N  # move to previous match
 ```
 
 ### Substitute
+
+> In normal mode
 
 ``` shell
 :s/old/new/g       # substitute 'new' for 'old'
@@ -123,8 +127,7 @@ N  # move to previous match
 
 ``` shell
 :vs filename  # vertical split another file
-:hs filename  # horizontal split another file
-# CTRL+h,j,k,l to switch between different screen
+# CTRL+w then h,j,k,l to switch between different screen
 ```
 
 ### Run external command
@@ -149,3 +152,10 @@ set number
 set shiftwidth=4
 set tabstop=4
 ```
+## Markdown
+
+> [stackedit](https://stackedit.io/)
+>
+> [马克飞象](https://maxiang.io/)
+>
+> [typora](https://www.typora.io/)
