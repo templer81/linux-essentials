@@ -22,3 +22,23 @@ fi
 # [[ $a < $x && $x < $b ]] is equivalent to [[ "5" < "6" && "6" < "10" ]]
 
 # (()) will recognize variables as number
+
+daytime=morning
+fruit=peach
+
+if [[ $daytime == "morning" && ( $fruit == "apple" || $fruit == "banana" ) ]]; then
+    echo "fruit is my favorite"
+else
+    echo "fruit is not my favorite"
+fi
+
+echo "test short circuit and"
+head -n1 andor.sh && echo "1: echo reached" # will output "echo reached"
+head -n1 notexistfile && echo "2: echo reached" # will not output "echo reached"
+
+echo "test short circuit or"
+head -n1 andor.sh || echo "1: echo reached" # will not output "echo reached"
+head -n1 notexistfile || echo "2: echo reached" # will output "echo reached"
+
+echo "combine and or"
+(( $a < $x && $x < $b )) && echo "true" || echo "false"
